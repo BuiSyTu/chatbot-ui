@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import React, { FC } from 'react'
 
 const Toggle: FC = () => (
   <button
@@ -9,8 +9,8 @@ const Toggle: FC = () => (
     data-bs-placement='right'
     data-bs-trigger='hover'
   >
-    <span id='kt_explore_toggle_label'>Explore</span>
+    <span id='kt_explore_toggle_label'>Kiểm tra NLP</span>
   </button>
 )
 
-export {Toggle}
+export { Toggle }

@@ -1,9 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {Toggle} from './Toggle'
-import {Demos} from './Demos'
-import {KTSVG} from '../../../helpers'
+import { Toggle } from './Toggle'
+import { KTSVG } from '../../../helpers'
 
 export function ExploreMain() {
   return (
@@ -17,7 +14,7 @@ export function ExploreMain() {
         data-kt-drawer-name='explore'
         data-kt-drawer-activate='true'
         data-kt-drawer-overlay='true'
-        data-kt-drawer-width="{default:'350px', 'lg': '475px'}"
+        data-kt-drawer-width="{default:'450px', 'lg': '575px'}"
         data-kt-drawer-direction='end'
         data-kt-drawer-toggle='#kt_explore_toggle'
         data-kt-drawer-close='#kt_explore_close'
@@ -27,7 +24,7 @@ export function ExploreMain() {
           {/* begin::Header */}
           <div className='card-header' id='kt_explore_header'>
             <h5 className='card-title fw-bold text-gray-600'>
-              Explore {process.env.REACT_APP_THEME_NAME}
+              Kiểm tra
             </h5>
 
             <div className='card-toolbar'>
@@ -55,11 +52,7 @@ export function ExploreMain() {
             >
               <div className='mb-7'>
                 <div className='d-flex flex-stack'>
-                  <h3 className='mb-0'>{process.env.REACT_APP_THEME_NAME} Licenses</h3>
-
-                  <a href='https://themeforest.net/licenses/standard' className='fw-bold'>
-                    License FAQs
-                  </a>
+                  <h3 className='mb-0'>Nhập câu mẫu</h3>
                 </div>
               </div>
 
@@ -139,7 +132,6 @@ export function ExploreMain() {
               <a href={process.env.REACT_APP_PURCHASE_URL} className='btn btn-primary mb-15 w-100'>
                 Buy Now
               </a>
-              <Demos />
             </div>
             {/* end::Content */}
           </div>
