@@ -127,7 +127,7 @@ const FormModal: React.FC<Props> = ({
             handleOk={handleOk}
             handleCancel={handleCancel}
             isLoading={isLoading}
-            title='Từ khóa'
+            title='Ý định'
             typeModal={typeModal}
         >
             <Form {...layout} form={form}>

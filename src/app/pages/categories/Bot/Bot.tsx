@@ -148,7 +148,7 @@ const BotPage = () => {
 
     return (
         <div>
-            <PageTitle breadcrumbs={[]}>Danh sách nguồn dữ liệu</PageTitle>
+            <PageTitle breadcrumbs={[]}>Danh sách bot</PageTitle>
             <div className='card mb-5 mb-xl-12 p-10'>
                 <div className='d-flex row justify-content-between align-items-center px-5'>
                     <div className='col-xl-8 d-flex align-items-center'>

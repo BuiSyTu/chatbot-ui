@@ -127,7 +127,7 @@ const ModalCategory: React.FC<Props> = ({
             handleOk={handleOk}
             handleCancel={handleCancel}
             isLoading={isLoading}
-            title='Từ khóa'
+            title='Bot'
             typeModal={typeModal}
         >
             <Form {...layout} form={form}>

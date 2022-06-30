@@ -13,39 +13,39 @@ export function AsideMenuMain() {
     <>
       <AsideMenuItem
         to='/dashboard'
-        icon='/media/icons/duotune/art/art002.svg'
+        fontIcon='bi-clipboard-data'
         title={intl.formatMessage({ id: 'MENU.DASHBOARD' })}
       />
       <AsideMenuItem
         to='/builder'
-        icon='/media/icons/duotune/art/art004.svg'
+        fontIcon='bi-display'
         title='Huấn luyện - Kiểm tra'
       />
 
       <AsideHeaderMenu title='Dữ liệu' />
       <AsideMenuItem
         to='/categories/bot'
-        icon='/media/icons/duotune/art/art005.svg'
+        fontIcon='bi-robot'
         title='Bot'
       />
       <AsideMenuItem
         to='/categories/intent'
-        icon='/media/icons/duotune/art/art006.svg'
+        fontIcon='bi-person'
         title='Ý định'
       />
       <AsideMenuItem
         to='/categories/sentence'
-        icon='/media/icons/duotune/art/art007.svg'
+        fontIcon='bi-sticky'
         title='Câu mẫu'
       />
       <AsideMenuItem
         to='/categories/entity'
-        icon='/media/icons/duotune/art/art008.svg'
+        fontIcon='bi-layers'
         title='Loại thực thể'
       />
       <AsideMenuItem
         to='/categories/keyword'
-        icon='/media/icons/duotune/art/art009.svg'
+        fontIcon='bi-app'
         title='Từ khóa'
       />
 
@@ -53,25 +53,12 @@ export function AsideMenuMain() {
       <AsideMenuItemWithSub
         to='/apps/chat'
         title='Chat'
-        fontIcon='bi-chat-left'
-        icon='/media/icons/duotune/communication/com012.svg'
+        fontIcon='bi-chat-left-text'
       >
         <AsideMenuItem to='/apps/chat/private-chat' title='Private Chat' hasBullet={true} />
         <AsideMenuItem to='/apps/chat/group-chat' title='Group Chart' hasBullet={true} />
         <AsideMenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />
       </AsideMenuItemWithSub>
-      <div className='menu-item'>
-        <a
-          target='_blank'
-          className='menu-link'
-          href={process.env.REACT_APP_PREVIEW_DOCS_URL + '/docs/changelog'}
-        >
-          <span className='menu-icon'>
-            <KTSVG path='/media/icons/duotune/general/gen005.svg' className='svg-icon-2' />
-          </span>
-          <span className='menu-title'>Changelog {process.env.REACT_APP_VERSION}</span>
-        </a>
-      </div>
     </>
   )
 }

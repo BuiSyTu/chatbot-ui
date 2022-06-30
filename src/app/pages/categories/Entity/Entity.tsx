@@ -154,7 +154,7 @@ const IntentPage = () => {
 
     return (
         <div>
-            <PageTitle breadcrumbs={[]}>Loại thực thể</PageTitle>
+            <PageTitle breadcrumbs={[]}>Danh sách loại thực thể</PageTitle>
             <div className='card mb-5 mb-xl-12 p-10'>
                 <div className='d-flex row justify-content-between align-items-center px-5'>
                     <div className='col-xl-8 d-flex align-items-center'>

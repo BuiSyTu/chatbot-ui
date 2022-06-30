@@ -11,11 +11,11 @@ export function MenuInner() {
       <MenuItem title='Huấn luyện - Kiểm tra' to='/builder' />
       <MenuInnerWithSub
         title='Dữ liệu'
-        to='/crafted'
+        to='/categories'
         menuPlacement='bottom-start'
         menuTrigger='click'
       >
-        <MenuItem title='Bot' to='/categories/bot' fontIcon='bi-alarm' />
+        <MenuItem title='Bot' to='/categories/bot' fontIcon='bi-robot' />
         <MenuItem title='Ý định' to='/categories/intent' fontIcon='bi-person' />
         <MenuItem title='Câu mẫu' to='/categories/sentence' fontIcon='bi-sticky' />
         <MenuItem title='Loại thực thể' to='/categories/entity' fontIcon='bi-layers' />
@@ -26,7 +26,7 @@ export function MenuInner() {
         <MenuInnerWithSub
           title='Chat'
           to='/apps/chat'
-          icon='/media/icons/duotune/communication/com012.svg'
+          fontIcon='bi-chat-left-text'
           hasArrow={true}
           menuPlacement='right-start'
           menuTrigger={`{default:'click', lg: 'hover'}`}

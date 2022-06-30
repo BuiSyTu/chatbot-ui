@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC} from 'react'
-import {Link} from 'react-router-dom'
+import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 import clsx from 'clsx'
-import {useLayout} from '../../core'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
-import {AsideMenu} from './AsideMenu'
+import { useLayout } from '../../core'
+import { KTSVG, toAbsoluteUrl } from '../../../helpers'
+import { AsideMenu } from './AsideMenu'
 
 const AsideDefault: FC = () => {
-  const {config, classes} = useLayout()
-  const {aside} = config
+  const { config, classes } = useLayout()
+  const { aside } = config
 
   return (
     <div
@@ -73,7 +73,7 @@ const AsideDefault: FC = () => {
       {/* end::Aside menu */}
 
       {/* begin::Footer */}
-      <div className='aside-footer flex-column-auto pt-5 pb-7 px-5' id='kt_aside_footer'>
+      {/* <div className='aside-footer flex-column-auto pt-5 pb-7 px-5' id='kt_aside_footer'>
         <a
           target='_blank'
           className='btn btn-custom btn-primary w-100'
@@ -88,10 +88,10 @@ const AsideDefault: FC = () => {
             <KTSVG path='/media/icons/duotune/general/gen005.svg' />
           </span>
         </a>
-      </div>
+      </div> */}
       {/* end::Footer */}
     </div>
   )
 }
 
-export {AsideDefault}
+export { AsideDefault }
