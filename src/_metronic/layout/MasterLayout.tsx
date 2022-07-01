@@ -49,9 +49,9 @@ const MasterLayout: React.FC = ({ children }) => {
       </div>
 
       {/* begin:: Drawers */}
-      <ActivityDrawer />
+      {/* <ActivityDrawer />
       <ExploreMain />
-      <DrawerMessenger />
+      <DrawerMessenger /> */}
       {/* end:: Drawers */}
 
       {/* begin:: Modals */}

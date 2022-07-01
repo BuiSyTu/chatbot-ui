@@ -1,3 +1,4 @@
+export * from './ai'
 export * from './bot'
 export * from './entity'
 export * from './intent'

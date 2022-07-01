@@ -12,6 +12,7 @@ export function PrivateRoutes() {
   const WidgetsPage = lazy(() => import('../modules/widgets/WidgetsPage'))
   const ChatPage = lazy(() => import('../modules/apps/chat/ChatPage'))
   const CategoriesPage = lazy(() => import('../pages/categories'))
+  const TrainingTestPage = lazy(() => import('../pages/training-test'))
 
   return (
     <Suspense fallback={<FallbackView />}>
@@ -25,6 +26,7 @@ export function PrivateRoutes() {
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
         <Route path='/categories' component={CategoriesPage} />
+        <Route path='/training-test' component={TrainingTestPage} />
         <Redirect from='/auth' to='/dashboard' />
         <Redirect exact from='/' to='/dashboard' />
         <Redirect to='error/404' />
